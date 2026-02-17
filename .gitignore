@@ -1,0 +1,14 @@
+# Claude Code local settings
+.claude/settings.local.json
+
+node_modules/
+dist/
+.next/
+.wrangler/
+coverage/
+.turbo/
+
+.env
+.env.local
+*.env.*
+!*.env.example
