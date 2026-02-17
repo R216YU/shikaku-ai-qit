@@ -11,7 +11,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "shikaku-ai-db"
-database_id = "YOUR_D1_DATABASE_ID"
+database_id = "db64cc6f-4e69-491a-a7fc-e5aae2014823"
 
 # ===========================================================
 # KV Namespace（レート制限カウンター）
@@ -20,7 +20,7 @@ database_id = "YOUR_D1_DATABASE_ID"
 # ===========================================================
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "eac64a2e955946a99856e8f33515d224"
 
 # ===========================================================
 # ローカル開発用環境変数 → .dev.vars に記載（コミット不要）
