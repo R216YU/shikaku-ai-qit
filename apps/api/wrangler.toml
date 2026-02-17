@@ -1,0 +1,35 @@
+name = "shikaku-ai-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ===========================================================
+# D1 Database
+# wrangler d1 create shikaku-ai-db を実行後、
+# database_id を下記に記入してください
+# ===========================================================
+[[d1_databases]]
+binding = "DB"
+database_name = "shikaku-ai-db"
+database_id = "YOUR_D1_DATABASE_ID"
+
+# ===========================================================
+# KV Namespace（レート制限カウンター）
+# wrangler kv namespace create RATE_LIMIT を実行後、
+# id を下記に記入してください
+# ===========================================================
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "YOUR_KV_NAMESPACE_ID"
+
+# ===========================================================
+# ローカル開発用環境変数 → .dev.vars に記載（コミット不要）
+# 本番環境変数 → wrangler secret put <KEY> で設定
+# ===========================================================
+# GEMINI_API_KEY
+# STRIPE_SECRET_KEY
+# STRIPE_WEBHOOK_SECRET
+# AUTH_SECRET
+
+[dev]
+port = 8787
