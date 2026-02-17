@@ -1,7 +1,20 @@
 # このファイルを .dev.vars にコピーして値を記入してください
 # .dev.vars は .gitignore で除外されます
 
+# Gemini API
 GEMINI_API_KEY=your_gemini_api_key_here
+
+# Stripe（テストモードのキーを使用）
 STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
 STRIPE_WEBHOOK_SECRET=whsec_your_stripe_webhook_secret_here
+STRIPE_PRICE_ID=price_your_stripe_price_id_here
+
+# Auth（ランダムな32文字以上の文字列）
 AUTH_SECRET=your_random_auth_secret_here_at_least_32_chars
+
+# Google OAuth（Google Cloud Console で取得）
+GOOGLE_CLIENT_ID=your_google_client_id_here
+GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+
+# Web アプリの URL
+WEB_BASE_URL=http://localhost:3000
